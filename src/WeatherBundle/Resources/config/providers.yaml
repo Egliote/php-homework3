@@ -1,0 +1,15 @@
+services:
+    _defaults:
+        public: false
+
+    nfq_weather.provider.openweathermap:
+        class: Nfq\WeatherBundle\OpenWeatherMapWeatherProvider
+        arguments: ['']
+
+    nfq_weather.provider.yahoo:
+        class: Nfq\WeatherBundle\YahooWeatherProvider
+        arguments: ['']
+
+    nfq_weather.provider.delegating:
+        class: Nfq\WeatherBundle\DelegatingWeatherProvider
+        arguments: ['']

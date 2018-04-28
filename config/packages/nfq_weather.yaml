@@ -1,0 +1,9 @@
+nfq_weather:
+    provider: delegating
+    providers:
+        openweathermap:
+            api_key: '28632ef058498bb36774567456cfe912'
+        delegating:
+            providers:
+                - yahoo
+                - openweathermap
